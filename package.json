@@ -1,0 +1,22 @@
+{
+  "name": "mitgliederverwaltung-backend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderDojo-Saar/mitgliederverwaltung-backend.git"
+  },
+  "author": "Andreas Sander (mail@andi1984.de)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoderDojo-Saar/mitgliederverwaltung-backend/issues"
+  },
+  "homepage": "https://github.com/CoderDojo-Saar/mitgliederverwaltung-backend#readme",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "graphql-cli": "^2.16.7"
+  }
+}
