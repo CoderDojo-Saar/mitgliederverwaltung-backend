@@ -1,5 +1,5 @@
 const Mutation = {
-  async createItem(parent, args, ctx, info) {
+  async createSerie(parent, args, ctx, info) {
     const item = await ctx.db.mutation.createItem(
       {
         data: {
@@ -10,7 +10,6 @@ const Mutation = {
     );
     return item;
   }
-
 };
 
 module.exports = Mutation;

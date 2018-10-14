@@ -1,9 +1,9 @@
 # import * from './generated/prisma.graphql'
 
 type Mutation {
-  createItem(title: String, description: String): Item!
+  createSerie(title: String, description: String): EventSerie!
 }
 
 type Query {
-  items: [Item]
+  eventSeries: [EventSerie]
 }

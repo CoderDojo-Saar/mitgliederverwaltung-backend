@@ -1,10 +1,38 @@
-type User {
+type Contact {
   id: ID! @unique
-  name: String!
+  lastname: String!
+  firstname: String!
+  email: String!,
+  tel: String
 }
 
-type Item {
+type Participant {
+  id: ID! @unique
+  lastname: String!
+  firstname: String!
+  age: Int
+  borrowDevice: Boolean,
+  contacts: [Contact!]!
+}
+
+type EventSerie {
   id: ID! @unique
   title: String!
-  description: String!
+  description: String
+}
+
+type Event {
+  id: ID! @unique
+  title: String!
+  date: DateTime!
+  location: Location
+  series: EventSerie
+  seriesNumber: Int
+  participants: [Participant!]!
+}
+
+type Location {
+  id: ID! @unique
+  name: String!
+  description: String
 }
