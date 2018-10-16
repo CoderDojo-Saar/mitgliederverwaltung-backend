@@ -1,11 +1,7 @@
 const Mutation = {
   async createSerie(parent, args, ctx, info) {
-    const item = await ctx.db.mutation.createItem(
-      {
-        data: {
-          ...args
-        }
-      },
+    const item = await ctx.db.mutation.createEventSerie(
+      { data: { ...args } },
       info
     );
     return item;
