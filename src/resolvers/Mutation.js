@@ -13,6 +13,14 @@ const Mutation = {
     );
 
     return item;
+  },
+  async createParticipant(parent, args, ctx, info) {
+    const item = await ctx.db.mutation.createParticipant(
+      { data: { ...args } },
+      info
+    );
+
+    return item;
   }
 };
 
