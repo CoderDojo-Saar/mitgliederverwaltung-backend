@@ -15,4 +15,5 @@ type Mutation {
 type Query {
   eventSeries: [EventSerie]
   participants: [Participant]
+  contacts: [Contact]
 }
