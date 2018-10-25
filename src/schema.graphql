@@ -10,6 +10,14 @@ type Mutation {
     borrowDevice: Boolean
     contacts: ContactCreateManyInput
   ): Participant!
+  createEvent(
+    title: String!
+    date: DateTime!
+    seriesNumber: Int
+    location: LocationCreateOneInput
+    series: EventSerieCreateOneInput
+    participants: ParticipantCreateManyInput
+  ): Event!
 }
 
 type Query {

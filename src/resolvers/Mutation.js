@@ -21,6 +21,14 @@ const Mutation = {
     );
 
     return item;
+  },
+  async createEvent(parent, args, ctx, info) {
+    const item = await ctx.db.mutation.createParticipant(
+      { data: { ...args } },
+      info
+    );
+
+    return item;
   }
 };
 
